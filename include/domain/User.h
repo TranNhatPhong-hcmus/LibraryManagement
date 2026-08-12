@@ -14,10 +14,10 @@ private:
 public:
     User(const std::string& userId, const std::string& name, UserRole role, const std::string& email);
 
-    const std::string& getUserId() { return userId; }
-    const std::string& getName() { return name; }
-    UserRole getRole() { return role; }
-    const std::string& getEmail() { return email; }
+    const std::string& getUserId() const { return userId; }
+    const std::string& getName() const { return name; }
+    UserRole getRole() const { return role; }
+    const std::string& getEmail() const { return email; }
 
     void setName(const std::string& name);
     void setEmail(const std::string& email);
