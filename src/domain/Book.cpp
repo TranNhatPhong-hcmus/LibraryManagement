@@ -10,7 +10,7 @@ Book::Book(const std::string& bookId, const std::string& title, const std::strin
 
 void Book::setTitle(const std::string& title) {
     if (title.empty()) {
-        std::cout << "Loi: ten sach khong duoc trong!";
+        std::cout << "Loi: ten sach khong duoc trong!" << std::endl;
         return;
     }
     this->title = title;
@@ -18,7 +18,7 @@ void Book::setTitle(const std::string& title) {
 
 void Book::setAuthor(const std::string& author) {
     if (author.empty()) {
-        std::cout << "Loi: ten tac gia khong duoc trong!";
+        std::cout << "Loi: ten tac gia khong duoc trong!" << std::endl;
         return;
     }
     this->author = author;
@@ -26,7 +26,7 @@ void Book::setAuthor(const std::string& author) {
 
 void Book::setCategory(const std::string& category) {
     if (category.empty()) {
-        std::cout << "Loi: the loai khong duoc trong!";
+        std::cout << "Loi: the loai khong duoc trong!" << std::endl;
         return;
     }
     this->category = category;
@@ -52,7 +52,7 @@ void Book::setTotalCopies(int totalCopies) {
 
 bool Book::decreaseAvailable() {
     if (!isAvailable()) {
-        std::cout << "Loi: khong con sach! ";
+        std::cout << "Loi: khong con sach! " << std::endl;
         return false;
     }
     availableCopies--;
