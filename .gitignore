@@ -4,6 +4,7 @@ build/
 *.exe
 *.out
 .vs/
+.vscode/
 *.suo
 *.user
 .DS_Store
