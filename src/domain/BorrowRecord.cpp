@@ -2,25 +2,22 @@
 #include <iostream>
 #include <string>
 
-BorrowRecord::BorrowRecord(const std::string& recordId, const std::string& userId, const std::string bookId,
-    const std::string& borrowDate, const std::string& dueDate)
+BorrowRecord::BorrowRecord(const std::string& recordId, const std::string& userId, const std::string& bookId,
+    const Date& borrowDate, const Date& dueDate)
+    : recordId(recordId), userId(userId), bookId(bookId),
+    borrowDate(borrowDate), dueDate(dueDate),
+    returnDate(0, 0, 0),              // giá trị quy ước: "chưa trả"
+    status(BorrowStatus::Borrowing)
 {
-    this->recordId = recordId;
-    this->userId = userId;
-    this->bookId = bookId;
-    this->borrowDate = borrowDate;
-    this->dueDate = dueDate;
-    this->returnDate = "";
-    this->status = BorrowStatus::Borrowing;
 }
 
-bool BorrowRecord::markReturned(const std::string& returnDate) {
+bool BorrowRecord::markReturned(const Date& returnDate) {
     if (status == BorrowStatus::Returned) {
         std::cout << "Loi: phieu nay da duoc tra roi!" << std::endl;
         return false;
     }
-    if (returnDate.empty()) {
-        std::cout << "Loi: ngay tra khong duoc rong!" << std::endl;
+    if (!returnDate.isValid()) {
+        std::cout << "Loi: ngay tra khong hop le!" << std::endl;
         return false;
     }
 
@@ -32,7 +29,7 @@ bool BorrowRecord::markReturned(const std::string& returnDate) {
     status = BorrowStatus::Returned;
     return true;
 }
-bool BorrowRecord::isOverdue(const std::string& currentDate) const {
+
+bool BorrowRecord::isOverdue(const Date& currentDate) const {
     return currentDate > dueDate;
 }
-
