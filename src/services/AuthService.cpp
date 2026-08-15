@@ -1,9 +1,10 @@
 #include "AuthService.h"
 #include "UserManager.h"
+#include "Admin.h"
 #include <string>
 #include <iostream>
 
-AuthService::AuthService(UserManager& userManager) : userManager(userManager) {}
+AuthService::AuthService(UserManager& userManager, Admin& admin) : userManager(userManager), admin(admin) {}
 
 User* AuthService::loginUser(const std::string& userId) {
     User* user = userManager.findUserById(userId);
@@ -15,3 +16,11 @@ User* AuthService::loginUser(const std::string& userId) {
     return user;
 }
 
+
+bool AuthService::loginAdmin(const std::string& adminId, const std::string& password) {
+    if (adminId == admin.getAdminId() && admin.checkPassword(password)) {
+        std::cout << "Xin chao, admin " << admin.getName() << std::endl;
+        return true;
+    }
+    return false;
+}
