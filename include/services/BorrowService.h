@@ -10,7 +10,7 @@
 
 class BorrowService {
 private:
-    std::vector<BorrowRecord> reconds;
+    std::vector<BorrowRecord> records;
     Library& library;
     UserManager& userManager;
 
@@ -23,7 +23,7 @@ public:
 
     std::vector<BorrowRecord> getUserHistory(const std::string& userId) const;
     std::vector<BorrowRecord> getAllRecords() const;
-    BorrowRecord* findRecorById(const std::string& recordId);
+    BorrowRecord* findRecordById(const std::string& recordId);
 };
 
 #endif
