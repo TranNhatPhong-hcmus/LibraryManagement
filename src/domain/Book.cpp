@@ -8,6 +8,12 @@ Book::Book(const std::string& bookId, const std::string& title, const std::strin
     category(category), totalCopies(totalCopies), availableCopies(totalCopies) {
 }
 
+Book::Book(const std::string& bookId, const std::string& title, const std::string& author,
+    const std::string& category, int totalCopies, int availableCopies)
+    : bookId(bookId), title(title), author(author), category(category),
+    totalCopies(totalCopies), availableCopies(availableCopies) {
+}
+
 void Book::setTitle(const std::string& title) {
     if (title.empty()) {
         std::cout << "Loi: ten sach khong duoc trong!" << std::endl;

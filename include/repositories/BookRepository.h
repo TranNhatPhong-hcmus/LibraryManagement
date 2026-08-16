@@ -7,7 +7,7 @@
 
 class BookRepository {
 private:
-    std::string filePath;   // ví dụ: "data/books.txt"
+    std::string filePath;
 
 public:
     BookRepository(const std::string& filePath);

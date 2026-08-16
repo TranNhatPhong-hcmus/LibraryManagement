@@ -16,6 +16,9 @@ public:
     Book(const std::string& bookId, const std::string& title, const std::string& author,
         const std::string& category, int totalCopies);
 
+    Book(const std::string& bookId, const std::string& title, const std::string& author,
+        const std::string& category, int totalCopies, int availableCopies);
+
     const std::string& getBookId() const { return bookId; }
     const std::string& getTitle() const { return title; }
     const std::string& getAuthor() const { return author; }

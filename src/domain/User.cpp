@@ -2,6 +2,16 @@
 #include <iostream>
 #include <string>
 
+std::string userRoleToString(UserRole role) {
+    if (role == UserRole::Student) return "Student";
+    return "Teacher";
+}
+
+UserRole stringToUserRole(const std::string& str) {
+    if (str == "Student") return UserRole::Student;
+    return UserRole::Teacher;
+}
+
 User::User(const std::string& userId, const std::string& name, UserRole role, const std::string& email)
     : userId(userId), name(name), role(role), email(email) {
 }

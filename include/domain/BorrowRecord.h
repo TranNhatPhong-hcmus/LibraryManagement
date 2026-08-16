@@ -6,7 +6,10 @@
 
 enum class BorrowStatus { Borrowing, Returned, Overdue };
 
-// Dinh dang date : xx/xx/xxxx
+
+
+std::string borrowStatusToString(BorrowStatus status);
+BorrowStatus stringToBorrowStatus(const std::string& str);
 
 class BorrowRecord {
 private:
@@ -20,6 +23,9 @@ private:
 public:
     BorrowRecord(const std::string& recordId, const std::string& userId, const std::string& bookId,
         const Date& borrowDate, const Date& dueDate);
+
+    BorrowRecord(const std::string& recordId, const std::string& userId, const std::string& bookId,
+        const Date& borrowDate, const Date& dueDate, const Date& returnDate, BorrowStatus status);
 
     const std::string& getRecordId() const { return recordId; }
     const std::string& getUserId() const { return userId; }

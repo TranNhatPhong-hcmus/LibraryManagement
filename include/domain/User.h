@@ -5,6 +5,9 @@
 
 enum class UserRole { Student, Teacher };
 
+std::string userRoleToString(UserRole role);
+UserRole stringToUserRole(const std::string& str);
+
 class User {
 private:
     std::string userId;
