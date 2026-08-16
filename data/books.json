@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "bookId": "B001",
+      "title": "Lap Trinh C++ Co Ban",
+      "author": "Nguyen Van A",
+      "category": "Cong Nghe",
+      "totalCopies": 5,
+      "availableCopies": 5
+    },
+    {
+      "bookId": "B002",
+      "title": "Data Structures and Algorithms",
+      "author": "Robert Sedgewick",
+      "category": "Cong Nghe",
+      "totalCopies": 3,
+      "availableCopies": 2
+    },
+    {
+      "bookId": "B003",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "category": "Cong Nghe",
+      "totalCopies": 4,
+      "availableCopies": 4
+    },
+    {
+      "bookId": "B004",
+      "title": "Doc Than Kinh Hoang",
+      "author": "Nguyen Nhat Anh",
+      "category": "Van Hoc",
+      "totalCopies": 6,
+      "availableCopies": 6
+    },
+    {
+      "bookId": "B005",
+      "title": "So Do",
+      "author": "Vu Trong Phung",
+      "category": "Van Hoc",
+      "totalCopies": 2,
+      "availableCopies": 0
+    },
+    {
+      "bookId": "B006",
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "category": "Lich Su",
+      "totalCopies": 5,
+      "availableCopies": 3
+    },
+    {
+      "bookId": "B007",
+      "title": "Toan Cao Cap A1",
+      "author": "Tran Van B",
+      "category": "Toan Hoc",
+      "totalCopies": 4,
+      "availableCopies": 4
+    },
+    {
+      "bookId": "B008",
+      "title": "Vat Ly Dai Cuong",
+      "author": "Le Thi C",
+      "category": "Vat Ly",
+      "totalCopies": 3,
+      "availableCopies": 1
+    },
+    {
+      "bookId": "B009",
+      "title": "Design Patterns",
+      "author": "Erich Gamma",
+      "category": "Cong Nghe",
+      "totalCopies": 4,
+      "availableCopies": 2
+    },
+    {
+      "bookId": "B010",
+      "title": "Nha Gia Kim",
+      "author": "Paulo Coelho",
+      "category": "Van Hoc",
+      "totalCopies": 7,
+      "availableCopies": 7
+    }
+  ]
+}

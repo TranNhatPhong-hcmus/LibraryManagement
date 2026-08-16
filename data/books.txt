@@ -1,0 +1,10 @@
+B001|Lap Trinh C++ Co Ban|Nguyen Van A|Cong Nghe|5|5
+B002|Data Structures and Algorithms|Robert Sedgewick|Cong Nghe|3|2
+B003|Clean Code|Robert C. Martin|Cong Nghe|4|4
+B004|Doc Than Kinh Hoang|Nguyen Nhat Anh|Van Hoc|6|6
+B005|So Do|Vu Trong Phung|Van Hoc|2|0
+B006|Sapiens|Yuval Noah Harari|Lich Su|5|3
+B007|Toan Cao Cap A1|Tran Van B|Toan Hoc|4|4
+B008|Vat Ly Dai Cuong|Le Thi C|Vat Ly|3|1
+B009|Design Patterns|Erich Gamma|Cong Nghe|4|2
+B010|Nha Gia Kim|Paulo Coelho|Van Hoc|7|7

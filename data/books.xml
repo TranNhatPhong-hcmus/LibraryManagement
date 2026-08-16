@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <bookId>B001</bookId>
+        <title>Lap Trinh C++ Co Ban</title>
+        <author>Nguyen Van A</author>
+        <category>Cong Nghe</category>
+        <totalCopies>5</totalCopies>
+        <availableCopies>5</availableCopies>
+    </book>
+    <book>
+        <bookId>B002</bookId>
+        <title>Data Structures and Algorithms</title>
+        <author>Robert Sedgewick</author>
+        <category>Cong Nghe</category>
+        <totalCopies>3</totalCopies>
+        <availableCopies>2</availableCopies>
+    </book>
+    <book>
+        <bookId>B003</bookId>
+        <title>Clean Code</title>
+        <author>Robert C. Martin</author>
+        <category>Cong Nghe</category>
+        <totalCopies>4</totalCopies>
+        <availableCopies>4</availableCopies>
+    </book>
+    <book>
+        <bookId>B004</bookId>
+        <title>Doc Than Kinh Hoang</title>
+        <author>Nguyen Nhat Anh</author>
+        <category>Van Hoc</category>
+        <totalCopies>6</totalCopies>
+        <availableCopies>6</availableCopies>
+    </book>
+    <book>
+        <bookId>B005</bookId>
+        <title>So Do</title>
+        <author>Vu Trong Phung</author>
+        <category>Van Hoc</category>
+        <totalCopies>2</totalCopies>
+        <availableCopies>0</availableCopies>
+    </book>
+    <book>
+        <bookId>B006</bookId>
+        <title>Sapiens</title>
+        <author>Yuval Noah Harari</author>
+        <category>Lich Su</category>
+        <totalCopies>5</totalCopies>
+        <availableCopies>3</availableCopies>
+    </book>
+    <book>
+        <bookId>B007</bookId>
+        <title>Toan Cao Cap A1</title>
+        <author>Tran Van B</author>
+        <category>Toan Hoc</category>
+        <totalCopies>4</totalCopies>
+        <availableCopies>4</availableCopies>
+    </book>
+    <book>
+        <bookId>B008</bookId>
+        <title>Vat Ly Dai Cuong</title>
+        <author>Le Thi C</author>
+        <category>Vat Ly</category>
+        <totalCopies>3</totalCopies>
+        <availableCopies>1</availableCopies>
+    </book>
+    <book>
+        <bookId>B009</bookId>
+        <title>Design Patterns</title>
+        <author>Erich Gamma</author>
+        <category>Cong Nghe</category>
+        <totalCopies>4</totalCopies>
+        <availableCopies>2</availableCopies>
+    </book>
+    <book>
+        <bookId>B010</bookId>
+        <title>Nha Gia Kim</title>
+        <author>Paulo Coelho</author>
+        <category>Van Hoc</category>
+        <totalCopies>7</totalCopies>
+        <availableCopies>7</availableCopies>
+    </book>
+</books>
